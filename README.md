@@ -47,3 +47,9 @@ CREATE TABLE eventos (
     descricao TEXT,
     criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
+
+---
+
+## Wireframe
+Link: https://www.figma.com/board/CVrt5Vr4rMl4LFaSqT7A8q/FigJam-basics?node-id=0-1&t=Jiwa06ddnvQOMqvR-1
