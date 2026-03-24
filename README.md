@@ -1,1 +1,50 @@
-📅 Sistema de Gerenciamento de Eventos (SGE)Este projeto é o MVP (Minimum Viable Product) desenvolvido para a Avaliação Final (AF) da disciplina. O sistema permite o controle completo do ciclo de vida de eventos, integrando conceitos de Programação Orientada a Objetos, persistência em Banco de Dados Relacional e design de Interface Humano-Computador.🚀 Tecnologias UtilizadasLinguagem: Python 3.10+Banco de Dados: PostgreSQL 14+Bibliotecas: psycopg2 (Driver) ou SQLAlchemy (ORM)Prototipagem: Figma / Whimsical (Wireframes)🏗️ 1. Programação Orientada a Objetos (POO)O sistema foi estruturado seguindo os pilares da orientação a objetos para garantir manutenibilidade e clareza.Classes Principais:Classe Evento: Representa a entidade principal do sistema.Responsabilidade: Armazenar os atributos de um evento (ID, nome, data, local e descrição).Encapsulamento: Os atributos são protegidos e acessados via métodos para garantir a integridade dos dados (ex: validação de data futura).Classe GerenciadorEventos: Atua como o controlador da aplicação.Responsabilidade: Gerenciar a coleção de eventos, implementando a lógica de negócio para Cadastro, Listagem, Consulta, Atualização e Remoção (CRUD).🗄️ 2. Projeto Físico de Banco de DadosO banco de dados foi projetado para garantir a persistência e a performance das consultas. Abaixo, a estrutura da tabela principal:Tabela: eventosColunaTipoRestriçãoDescriçãoidSERIALPRIMARY KEYIdentificador único autoincrementado.nomeVARCHAR(150)NOT NULLNome do evento (mín. 3 caracteres).data_eventoTIMESTAMPNOT NULLData e hora da realização.localVARCHAR(255)NOT NULLEndereço ou nome do recinto.descricaoTEXT-Detalhamento opcional do evento.Decisões de Projeto:Índices (INDEX): Criado um índice na coluna nome para otimizar a listagem alfabética e buscas rápidas.Integridade: Utilização de NOT NULL em campos críticos para evitar registros incompletos e CHECK CONSTRAINT para validar se a data do evento é posterior à data de criação.🎨 3. Interface Humano-Computador (IHC)O fluxo de telas foi desenhado focando na facilidade de aprendizado e prevenção de erros.Wireframes:Tela Inicial / Listagem: Exibe um dashboard com todos os eventos. Utiliza ícones intuitivos para edição e exclusão.Tela de Cadastro: Formulário limpo com agrupamento de campos relacionados.Tela de Edição: Reutiliza a lógica do cadastro, mas carrega os dados existentes para o usuário.Sitemap (Fluxo):Início → Lista de Eventos.Ação "Novo" → Abre Formulário de Cadastro → Sucesso → Retorna à Lista.Ação "Editar" → Abre Formulário de Edição → Sucesso → Retorna à Lista.🛠️ Como Executar o ProjetoConfigurar Banco de Dados:Execute o script SQL disponível em /sql/projeto_fisico.sql no seu PostgreSQL.Configurar Ambiente:Instale as dependências: pip install -r requirements.txt.Configure as variáveis de ambiente no arquivo .env (usuário, senha, host).Rodar Aplicação:python main.py📺 Vídeo ExplicativoConfira a apresentação completa do projeto no link abaixo:👉 Link para o Vídeo (YouTube/Drive)
+# 📅 Sistema de Gerenciamento de Eventos (SGE)
+
+Este projeto consiste em um MVP (Minimum Viable Product) desenvolvido para a **Avaliação Final (AF)**. A aplicação integra os três pilares fundamentais da disciplina: **Programação Orientada a Objetos (POO)**, **Projeto de Banco de Dados** e **Interface Humano-Computador (IHC)**.
+
+---
+
+## 📝 I. Descrição do Projeto
+
+O **SGE** é uma ferramenta voltada para a organização simplificada de eventos, permitindo que o usuário tenha controle total sobre o ciclo de vida de cada registro (CRUD).
+
+### Tecnologias Utilizadas:
+* **Linguagem:** Python 3.10+
+* **Banco de Dados:** PostgreSQL 14
+* **ORM (Opcional):** SQLAlchemy
+* **Prototipagem:** Figma / Whimsical (Wireframes)
+
+---
+
+## 🏗️ II. Explicação das Classes (POO)
+
+A arquitetura do sistema foi pensada para garantir o baixo acoplamento e a alta coesão, utilizando os princípios da Orientação a Objetos.
+
+### 1. Classe `Evento`
+Representa a entidade de dados. É responsável por encapsular as informações básicas de um evento.
+* **Atributos:** `id`, `nome`, `data`, `local`, `descricao`.
+* **Responsabilidade:** Garantir que os dados do evento sejam válidos e consistentes.
+
+### 2. Classe `GerenciadorEventos`
+Atua como a camada de serviço/lógica de negócio.
+* **Métodos:** `cadastrar()`, `listar()`, `consultar_por_id()`, `atualizar()` e `remover()`.
+* **Responsabilidade:** Intermediar a comunicação entre os objetos de domínio e o armazenamento (memória ou banco de dados).
+
+
+
+---
+
+## 🗄️ III. Projeto Físico do Banco de Dados
+
+O banco de dados foi modelado para suportar as operações de CRUD com integridade referencial e performance.
+
+### Estrutura da Tabela `eventos`:
+```sql
+CREATE TABLE eventos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    data_evento TIMESTAMP NOT NULL,
+    local VARCHAR(255) NOT NULL,
+    descricao TEXT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
