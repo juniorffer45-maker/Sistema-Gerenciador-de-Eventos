@@ -1,6 +1,6 @@
-# 📅 Sistema de Gerenciamento de Eventos (SGE)
+# 📅 Sistema de Gerenciamento de Eventos 
 
-Este projeto consiste em um MVP (Minimum Viable Product) desenvolvido para a **Avaliação Final (AF)**. A aplicação integra os três pilares fundamentais da disciplina: **Programação Orientada a Objetos (POO)**, **Projeto de Banco de Dados** e **Interface Humano-Computador (IHC)**.
+Este projeto consiste em um MVP desenvolvido para a **Avaliação Final (AF)**. A aplicação integra os três pilares fundamentais da disciplina: **Programação Orientada a Objetos (POO)**, **Projeto de Banco de Dados** e **Interface Humano-Computador (IHC)**.
 
 ---
 
