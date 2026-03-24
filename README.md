@@ -11,7 +11,6 @@ O **SGE** é uma ferramenta voltada para a organização simplificada de eventos
 ### Tecnologias Utilizadas:
 * **Linguagem:** Python 3.10+
 * **Banco de Dados:** PostgreSQL 14
-* **ORM (Opcional):** SQLAlchemy
 * **Prototipagem:** Figma / Whimsical (Wireframes)
 
 ---
