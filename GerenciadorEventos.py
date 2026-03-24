@@ -4,7 +4,7 @@ class Evento:
     def __init__(self, id, nome, data, local, descricao):
         self.id = id
         self.nome = nome
-        self.data = data # Armazene como objeto date/datetime
+        self.data = data # Armazena como objeto date/datetime
         self.local = local
         self.descricao = descricao
 
