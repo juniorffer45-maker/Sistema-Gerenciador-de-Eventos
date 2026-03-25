@@ -1,10 +1,10 @@
-# 📅 Sistema de Gerenciamento de Eventos 
+# Sistema de Gerenciamento de Eventos 
 
 Este projeto consiste em um MVP desenvolvido para a **Avaliação Final (AF)**. A aplicação integra os três pilares fundamentais da disciplina: **Programação Orientada a Objetos (POO)**, **Projeto de Banco de Dados** e **Interface Humano-Computador (IHC)**.
 
 ---
 
-## 📝 I. Descrição do Projeto
+## I. Descrição do Projeto
 
 O **SGE** é uma ferramenta voltada para a organização simplificada de eventos, permitindo que o usuário tenha controle total sobre o ciclo de vida de cada registro (CRUD).
 
@@ -15,7 +15,7 @@ O **SGE** é uma ferramenta voltada para a organização simplificada de eventos
 
 ---
 
-## 🏗️ II. Explicação das Classes (POO)
+## II. Explicação das Classes (POO)
 
 A arquitetura do sistema foi pensada para garantir o baixo acoplamento e a alta coesão, utilizando os princípios da Orientação a Objetos.
 
@@ -33,7 +33,7 @@ Atua como a camada de serviço/lógica de negócio.
 
 ---
 
-## 🗄️ III. Projeto Físico do Banco de Dados
+## III. Projeto Físico do Banco de Dados
 
 O banco de dados foi modelado para suportar as operações de CRUD com integridade referencial e performance.
 
@@ -52,4 +52,7 @@ CREATE TABLE eventos (
 ---
 
 ## IV. Wireframe
+
+Wireframe construido com base nos requisitos do Entregavel
+
 Link: https://www.figma.com/board/CVrt5Vr4rMl4LFaSqT7A8q/FigJam-basics?node-id=0-1&t=Jiwa06ddnvQOMqvR-1
