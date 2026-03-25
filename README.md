@@ -26,7 +26,7 @@ Representa a entidade de dados. É responsável por encapsular as informações 
 
 ### 2. Classe `GerenciadorEventos`
 Atua como a camada de serviço/lógica de negócio.
-* **Métodos:** `cadastrar()`, `listar()`, `consultar_por_id()`, `atualizar()` e `remover()`.
+* **Métodos:** `cadastrar()`, `listar_todos()`, `consultar_por_id()`, `atualizar()` e `remover()`.
 * **Responsabilidade:** Intermediar a comunicação entre os objetos de domínio e o armazenamento (memória ou banco de dados).
 
 
