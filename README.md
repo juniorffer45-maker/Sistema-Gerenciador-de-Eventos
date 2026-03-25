@@ -42,7 +42,7 @@ O banco de dados foi modelado para suportar as operações de CRUD com integrida
 CREATE TABLE eventos (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(150) NOT NULL,
-    data_evento TIMESTAMP NOT NULL,
+    data TIMESTAMP NOT NULL,
     local VARCHAR(255) NOT NULL,
     descricao TEXT,
     criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
