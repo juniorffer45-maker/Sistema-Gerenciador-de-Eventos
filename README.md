@@ -124,7 +124,23 @@ CREATE TABLE eventos (
 
 Wireframe construido com base nos requisitos do Entregavel
 
-![Tela Inicial/Dashboard]()
 
+### Tela Inicial/Dashboard
+![Tela Inicial/Dashboard](https://github.com/juniorffer45-maker/Sistema-Gerenciador-de-Eventos/blob/6e8fa1ad591cc92e232647abfbae1bffc0a39a39/Wireframe%20Imagens/TelaInicial)
 
+### Tela de Listagem de Eventos
+![TelaListagemEvento](https://github.com/juniorffer45-maker/Sistema-Gerenciador-de-Eventos/blob/6e8fa1ad591cc92e232647abfbae1bffc0a39a39/Wireframe%20Imagens/TelaListagemEvento)
+
+### Tela de Cadastro de Eventos
+![TelaCadastroEvento](https://github.com/juniorffer45-maker/Sistema-Gerenciador-de-Eventos/blob/6e8fa1ad591cc92e232647abfbae1bffc0a39a39/Wireframe%20Imagens/TelaCadastroEvento)
+
+### Tela de Edição/Alteração de Eventos
+![TelaAlterarEvento](https://github.com/juniorffer45-maker/Sistema-Gerenciador-de-Eventos/blob/6e8fa1ad591cc92e232647abfbae1bffc0a39a39/Wireframe%20Imagens/TelaAlterarEvento)
+
+### Menu Interativo
+- Posicionado no canto superior esquerdo do Header. Através do mesmo é possivel navegar entre as paginas do sistema
+ 
+![MenuInterativo](https://github.com/juniorffer45-maker/Sistema-Gerenciador-de-Eventos/blob/b8a3615c47aeb02b3507e6533a050aa4a77ece3c/Wireframe%20Imagens/MenuInterativo)
+
+-----------------------------------------------------------------------------------------------------
 Link: https://www.figma.com/board/CVrt5Vr4rMl4LFaSqT7A8q/FigJam-basics?node-id=0-1&t=Jiwa06ddnvQOMqvR-1
