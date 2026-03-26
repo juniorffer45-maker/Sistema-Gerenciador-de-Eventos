@@ -94,6 +94,18 @@ class GerenciadorEventos:
 
 O banco de dados foi modelado para suportar as operações de CRUD com integridade referencial e performance.
 
+### A tabela foi projetada para garantir integridade e performance:
+
+- id (SERIAL PRIMARY KEY): Identificador numérico autoincrementado. Garante que cada evento seja único e acelera as buscas internas do banco.
+
+- nome, data, local (NOT NULL): Campos obrigatórios. O uso de NOT NULL impede o salvamento de eventos incompletos, garantindo a consistência dos dados.
+
+- data (TIMESTAMP): Escolhido para armazenar dia e hora exatos, essencial para a cronologia de eventos.
+
+- descricao (TEXT): Uso de campo sem limite fixo para permitir desde notas curtas até cronogramas extensos.
+
+- criado_em (DEFAULT): Registro automático do momento do cadastro para fins de auditoria e ordenação por inserção.
+
 ### Estrutura da Tabela `eventos`:
 ```sql
 CREATE TABLE eventos (
