@@ -94,7 +94,7 @@ class GerenciadorEventos:
 
 O banco de dados foi modelado para suportar as operações de CRUD com integridade referencial e performance.
 
-### A tabela foi projetada para garantir integridade e performance:
+A tabela foi projetada para garantir integridade e performance:
 
 - id (SERIAL PRIMARY KEY): Identificador numérico autoincrementado. Garante que cada evento seja único e acelera as buscas internas do banco.
 
