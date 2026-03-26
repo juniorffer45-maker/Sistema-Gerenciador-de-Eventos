@@ -55,7 +55,7 @@ CREATE TABLE eventos (
 
 Wireframe construido com base nos requisitos do Entregavel
 
-![Tela Inicial/Dashboard](https://photos.app.goo.gl/4V32JcQhBNjdvDgY8)
+![Tela Inicial/Dashboard]()
 
 
 Link: https://www.figma.com/board/CVrt5Vr4rMl4LFaSqT7A8q/FigJam-basics?node-id=0-1&t=Jiwa06ddnvQOMqvR-1
